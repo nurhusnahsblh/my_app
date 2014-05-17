@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Application</title>
+  <%= stylesheet_link_tag    'application'  %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<table>
+	<tr>
+		<td  coolspan ="2" bgcolor="grey">
+			<h1>Header</h1>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="orange" >
+			<h2>Menu</h2>
+			<a href="/users">Users</a><br>
+			<a href="/taskks">Tasks</a><br>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<h2>Body</h2>
+			<%= yield %>
+			
+		</td>
+	</tr>
+
+
+</table>	
+
+
+</body>
+</html>
